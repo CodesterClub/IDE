@@ -10,10 +10,10 @@ read code
 		echo "$code" >> IDE.java 
 	fi
 done
-#NOTE: The >> instead of > will not overwrite the file but will 
-# append the input to the file as we press enter to go to the next line
+#NOTE: The >> instead of > will not overwrite the file but will append the input to the file as we press enter to go to the next line
 
-# The following line will compile and exectute the IDE.java file
+# The following line will compile the IDE.java file and execute the compiled IDE.class file in the current working directory
+# We remove the .java and the .class file when they arent required for a greater abstraction
 javac IDE.java
 rm IDE.java
 java IDE
